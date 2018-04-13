@@ -1,0 +1,28 @@
+.movie-item {
+  position: relative;
+  flex-basis: calc(20% - 20px);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 6px;
+  color: #27b6da;
+  cursor: pointer;
+}
+
+.movie-item__poster {
+  width: 100%;
+  vertical-align: middle;
+  transition: filter 120ms ease-in-out;
+}
+
+.movie-item:hover .movie-item__poster {
+  filter: brightness(120%);
+}
+
+.movie-item__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-weight: 500;
+  background-color: #082830;
+}
